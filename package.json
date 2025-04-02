@@ -1,0 +1,29 @@
+{
+  "name": "fitway-api",
+  "version": "1.0.0",
+  "description": "**FitWay** é uma simples e poderosa API RESTful desenvolvida com Node.js, com o objetivo de consolidar aprendizados sobre autenticação, regras de negócio, validação, segurança e estruturação de projetos reais. Inspirada no modelo Gympass, a aplicação permite check-ins em academias, gerenciamento de usuários e autenticação segura com JWT.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node build/server.js",
+    "dev": "tsx watch src/server.ts",
+    "build": "tsup src --out-dir build",
+    "lint": "eslint . --ext .ts",
+    "lint:fix": "eslint . --ext .ts --fix"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "16.4.7",
+    "fastify": "5.2.2",
+    "zod": "3.24.2"
+  },
+  "devDependencies": {
+    "@rocketseat/eslint-config": "2.2.2",
+    "@types/node": "22.13.17",
+    "eslint": "8.57.1",
+    "tsup": "8.4.0",
+    "tsx": "4.19.3",
+    "typescript": "5.8.2"
+  }
+}
