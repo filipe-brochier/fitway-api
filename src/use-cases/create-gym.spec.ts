@@ -1,15 +1,12 @@
 import { CreateGymUseCase } from './create-gym'
 import { expect, it, describe, beforeEach, vi } from 'vitest'
 import { InMemoryGymsRepository } from '@/repositories/in-memory/in-memory-gyms-repository'
-// import { InMemoryCheckInsRepository } from '@/repositories/in-memory/in-memory-check-ins-repository'
 
 let gymsRepository: InMemoryGymsRepository
-// let checkInsRepository: InMemoryCheckInsRepository
 let sut: CreateGymUseCase
 
-describe('Register Use Case', async () => {
+describe('Create Gym Use Case', async () => {
   beforeEach(async () => {
-    // checkInsRepository = new InMemoryCheckInsRepository()
     gymsRepository = new InMemoryGymsRepository()
     sut = new CreateGymUseCase(gymsRepository)
 
