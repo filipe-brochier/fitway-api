@@ -3,6 +3,8 @@ import { app } from '@/app'
 import { describe, it, expect, afterAll, beforeAll } from 'vitest'
 import { createAndAuthenticateUser } from '@/utils/test/create-and-authenticate-user'
 
+const IS_ADMIN = true
+
 describe('Create Gyms (e2e)', () => {
   beforeAll(async () => {
     await app.ready()
@@ -13,7 +15,7 @@ describe('Create Gyms (e2e)', () => {
   })
 
   it('should be able to create a gym', async () => {
-    const { token } = await createAndAuthenticateUser(app)
+    const { token } = await createAndAuthenticateUser(app, IS_ADMIN)
 
     const response = await request(app.server)
       .post('/gyms')
