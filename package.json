@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "**FitWay** é uma simples e poderosa API RESTful desenvolvida com Node.js, com o objetivo de consolidar aprendizados sobre autenticação, regras de negócio, validação, segurança e estruturação de projetos reais. Inspirada no modelo Gympass, a aplicação permite check-ins em academias, gerenciamento de usuários e autenticação segura com JWT.",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "start": "node build/server.js",
     "dev": "tsx watch src/server.ts",
