@@ -2,7 +2,7 @@
 
 **FitWay** é uma API RESTful para gerenciamento de academias e check-ins, desenvolvida com **Node.js**, **Fastify**, **Prisma**, e **TypeScript**. Este projeto foi inspirado no modelo Gympass e criado originalmente como parte do **Ignite da Rocketseat** (trilha Node.js), mas foi **expandido com novas funcionalidades** além das propostas originais.
 
-📄 [Read this README.md in english 🇧🇷](./README.md)
+📄 [Read this README.md in english](./README.md)
 
 ## 🚀 Tecnologias
 
