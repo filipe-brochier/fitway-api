@@ -91,12 +91,6 @@ npm run test:e2e
 
 ---
 
-## 📄 Licença
-
-Este projeto está sob a licença MIT. Veja o arquivo `LICENSE` para mais detalhes.
-
----
-
 ## 📢 Disclaimer
 
 Este projeto foi desenvolvido originalmente como parte do **Ignite da Rocketseat (Node.js)**.  
