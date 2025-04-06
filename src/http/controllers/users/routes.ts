@@ -5,6 +5,7 @@ import { authenticate } from './authenticate'
 import { profile } from './profile'
 import { register } from './register'
 import { refresh } from './refresh'
+import { rewards } from './rewards'
 
 export async function usersRoutes(app: FastifyInstance) {
   app.post('/users', register)
@@ -14,4 +15,5 @@ export async function usersRoutes(app: FastifyInstance) {
 
   /* Authenticated */
   app.get('/me', { onRequest: [verifyJWT] }, profile)
+  app.get('/me/rewards', { onRequest: [verifyJWT] }, rewards)
 }
