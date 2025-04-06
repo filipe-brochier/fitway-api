@@ -18,13 +18,9 @@ export class InMemoryRewardsRepository implements RewardsRepository {
     return reward
   }
 
-  async findByUserId(userId: string): Promise<Reward | null> {
-    const reward = await this.items.find((item) => item.user_id === userId)
+  async findManyByUserId(userId: string): Promise<Reward[]> {
+    const rewards = this.items.filter((item) => item.user_id === userId)
 
-    if (!reward) {
-      return null
-    }
-
-    return reward
+    return rewards
   }
 }
