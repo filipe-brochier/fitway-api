@@ -12,15 +12,21 @@ enum Role {
   MEMBER
 }
 
+enum RewardType {
+  TOTAL_FOCUS
+  UNSTOPPABLE
+}
+
 model User {
   id            String   @id @default(uuid())
   name          String
   email         String   @unique
   password_hash String
-  role          Role @default(MEMBER)
+  role          Role     @default(MEMBER)
   created_at    DateTime @default(now())
 
   checkIns CheckIn[]
+  Reward   Reward[]
 
   @@map("users")
 }
@@ -50,4 +56,16 @@ model Gym {
   checkIns CheckIn[]
 
   @@map("gyms")
+}
+
+model Reward {
+  id       String     @id @default(uuid())
+  type     RewardType
+  earnedAt DateTime   @default(now())
+
+  user    User   @relation(fields: [user_id], references: [id])
+  user_id String
+
+  @@unique([user_id, type])
+  @@map("rewards")
 }
