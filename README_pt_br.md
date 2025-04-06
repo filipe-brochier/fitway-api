@@ -106,5 +106,4 @@ No entanto, **foram adicionadas diversas melhorias e funcionalidades extras** co
 
 ## ✍️ Autor
 
-Feito com 💜 por Filipe  
-[Seu LinkedIn ou GitHub aqui]
+Feito com 💜 por Filipe Brochier

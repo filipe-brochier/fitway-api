@@ -90,12 +90,6 @@ npm run test:e2e
 
 ---
 
-## 📄 License
-
-This project is licensed under the MIT License. See the `LICENSE` file for details.
-
----
-
 ## 📢 Disclaimer
 
 This project was originally created as part of **Rocketseat's Ignite (Node.js track)**.  
@@ -105,5 +99,4 @@ However, several improvements and additional features were added to practice bac
 
 ## ✍️ Author
 
-Made with 💜 by Filipe  
-[Your LinkedIn or GitHub here]
+Made with 💜 by Filipe Brochier
